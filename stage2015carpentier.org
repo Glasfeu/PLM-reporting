@@ -5,48 +5,45 @@
 * Journal
 ** Week 15 Jun
 *** Mon 15 Jun
-**** Work planned
-***** DONE Modifier le code du Harvester pour l'intégrer au travail déjà effectué
+**** DONE Modifier le code du Harvester pour l'intégrer au travail déjà effectué
      SCHEDULED: <2015-06-17 wed.>
-***** DONE Retirer de la liste les clics rageurs sur Run quand du code ne fonctionne pas
+**** DONE Retirer de la liste les clics rageurs sur Run quand du code ne fonctionne pas
      SCHEDULED: <2015-06-18 thu.>
-***** DONE Vérifier le bon fonctionnement du Harvester et des nouvelles méthodes afin d'être sûr que l'on récupère bien les bonnes erreurs
+**** DONE Vérifier le bon fonctionnement du Harvester et des nouvelles méthodes afin d'être sûr que l'on récupère bien les bonnes erreurs
      SCHEDULED: <2015-06-22 mon.>
-**** What is done
+
 - Premières modifications du code des classes réalisées lors du PIDR
 - Création d'une classe à part qui réalise le travail qui était fait avant dans le Harvester (version avec objets)
 
 *** Tue 16 Jun
-**** Work planned
-***** DONE Résoudre le problème des codes Python qui font des erreurs d'interprétation (affiche "null" pour le moment)
+**** DONE Résoudre le problème des codes Python qui font des erreurs d'interprétation (affiche "null" pour le moment)
       SCHEDULED: <2015-06-18 thu.>
-***** DONE Finir les tests éventuels (clics rageurs, fonctionnement global)
+**** DONE Finir les tests éventuels (clics rageurs, fonctionnement global)
       SCHEDULED: <2015-06-19 fri.>
-***** DONE Finir l'intégration avec le code d'Hervé
+**** DONE Finir l'intégration avec le code d'Hervé
       SCHEDULED: <2015-06-19 fri.>
-***** DONE Etudier le cas des boucles infinies dans le code élève
+**** DONE Etudier le cas des boucles infinies dans le code élève
       SCHEDULED: <2015-06-22 mon.>
-**** What is done
+
 - Correction de quelques bugs dans les ré-exécutions de codes élève
 - Réimplémentation de la classe de statistiques (on oublie le csv pour l'instant, étant donné qu'il y a des virgules dans les logs d'erreur)
 
 *** Wed 17 Jun
-**** Work planned
-***** TODO Récupérer une nouvelle machine
+**** TODO Récupérer une nouvelle machine
       SCHEDULED: <2015-06-18 thu.>
-***** DONE Rendre le code propre dans toutes les classes déjà écrites
+**** DONE Rendre le code propre dans toutes les classes déjà écrites
       SCHEDULED: <2015-06-18 thu.>
-***** DONE Problème sur les leçons traitant de la récursivité
+**** DONE Problème sur les leçons traitant de la récursivité
       SCHEDULED: <2015-06-18 thu.>
-***** DONE Etudier la rétrocompatibilité du programme (exercices qui ont changé de nom...)
+**** DONE Etudier la rétrocompatibilité du programme (exercices qui ont changé de nom...)
       SCHEDULED: <2015-06-19 fri.>
       Est-ce que ça a vraiment un intérêt, étant donné que ce sont, pour la plupart d'entre eux, des exercices qui n'existent plus actuellement dans la PLM ?
       Pour l'instant, ça ne fonctionne pas vraiment. 
-***** DONE Réaliser des tests sur de grandes masses de données
+**** DONE Réaliser des tests sur de grandes masses de données
       SCHEDULED: <2015-06-19 fri.>
       Pour cela, il faut une machine plus puissante et surveiller l'exécution du code pendant toute sa durée, quitte à relancer le code plusieurs fois. 
       Le test a été effectué sur 150 branches pour un total de près de 6600 fichiers. 
-**** What is done
+
 - Jabber fonctionne sur ma machine
 - Exécution sur plus de branches que par le passé (environ 20 branches avant l'arrêt du programme, soit à cause de la mémoire, soit à cause du processeur)
 - Résultats obtenus sur 100 branches
@@ -55,23 +52,21 @@
 - Plusieurs tentatives pour réduire l'espace mémoire utilisé par le programme, sans succès
 
 *** Thu 18 Jun
-**** Work planned
-***** DONE Commenter le code
+**** DONE Commenter le code
       SCHEDULED: <2015-06-22 mon.>
-**** What is done
+
 - Premiers tests de création d'un jar pour l'exécution à distance (ça fonctionne bien en console)
 - Leçons sur la récursivité normalement toutes gérées
 - Javadoc créée dans les classes qui concernent mon travail
 
 *** Fri 19 Jun
-**** Work planned
-***** DONE Lancer le programme sur toutes les branches
+**** DONE Lancer le programme sur toutes les branches
       SCHEDULED: <2015-06-22 mon.>
-***** DONE Créer un jar
+**** DONE Créer un jar
       SCHEDULED: <2015-06-19 fri.>
-***** DONE  Gérer les boucles infinies
+**** DONE  Gérer les boucles infinies
       SCHEDULED: <2015-06-22 mon.>
-**** What is done
+
 - Vérification approfondie des erreurs récupérées : certaines erreurs n'ont pas de consistance puisque l'exercice n'existe plus dans la PLM
 - Refactoring du code terminé
 - Fusion du code avec le code d'Hervé
@@ -80,47 +75,41 @@
 
 ** Week 22 Jun
 *** Mon 22 Jun
-**** Work planned
-***** DONE S'occuper de l'exécution des exercices sur la Moria
+**** DONE S'occuper de l'exécution des exercices sur la Moria
       SCHEDULED: <2015-06-22 mon.>
-***** DONE Vérifier si les exercices à exécuter sont présents dans la liste des exercices encore implantés
+**** DONE Vérifier si les exercices à exécuter sont présents dans la liste des exercices encore implantés
       SCHEDULED: <2015-06-23 tue.>
-***** DONE Créer un monde erreur
+**** DONE Créer un monde erreur
       SCHEDULED: <2015-06-22 mon.>
-***** TODO Implanter le monde erreur et tester son exécution
+**** TODO Implanter le monde erreur et tester son exécution
       SCHEDULED: <2015-06-26 fri..>
-**** What is done
+
 - Correction de quelques bugs sur l'exécution des exercices qui ont changé de nom
 - Etude de la PLM pour l'implantation des mondes erreurs
 
 *** Tue 23 Jun
-**** Work planned
-**** What is done
+
 - Correction d'un bug dans le reparcours des branches
 - Etude approfondie de la PLM
 
 *** Wed 24 Jun
-**** Work planned
-**** What is done
+
 - Nouvelle recorrection dans le reparcours des traces
 - Accueil des deux nouveaux stagiaires
 - Première tentative d'ajout de mondes leurre
 
 *** Thu 25 Jun
-**** Work planned
 ***** TODO Vérifier que les mondes leurre sont testés
       SCHEDULED: <2015-06-26 fri.>
 ***** TODO Faire afficher le bon message à la PLM
       SCHEDULED: <2015-06-26 fri.>
-**** What is done
+
 - Mondes leurre ajoutés (il faut encore que ça affiche le bon message dans la PLM, et là, c'est une autre paire de manche...)
 - Plusieurs essais réalisés, mais je ne sais pas si les mondes leurres sont testés ou non
 
 *** Fri 26 Jun
-**** Work planned
-**** What is done
+
 
 ** Week 29 Jun
 *** Mon 29 Jun
-**** Work planned
-**** What is done
+
