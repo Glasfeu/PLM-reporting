@@ -6,95 +6,121 @@
 ** Week 15 Jun
 *** Mon 15 Jun
 **** Work planned
-***** DONE Modifier le code du Harvester pour l'intÃ©grer au travail dÃ©jÃ  effectuÃ©
+***** DONE Modifier le code du Harvester pour l'intégrer au travail déjà effectué
      SCHEDULED: <2015-06-17 wed.>
 ***** DONE Retirer de la liste les clics rageurs sur Run quand du code ne fonctionne pas
      SCHEDULED: <2015-06-18 thu.>
-***** DONE VÃ©rifier le bon fonctionnement du Harvester et des nouvelles mÃ©thodes afin d'Ãªtre sÃ»r que l'on rÃ©cupÃ¨re bien les bonnes erreurs
+***** DONE Vérifier le bon fonctionnement du Harvester et des nouvelles méthodes afin d'être sûr que l'on récupère bien les bonnes erreurs
      SCHEDULED: <2015-06-22 mon.>
 **** What is done
-- PremiÃ¨res modifications du code des classes rÃ©alisÃ©es lors du PIDR
-- CrÃ©ation d'une classe Ã  part qui rÃ©alise le travail qui Ã©tait fait avant dans le Harvester (version avec objets)
+- Premières modifications du code des classes réalisées lors du PIDR
+- Création d'une classe à part qui réalise le travail qui était fait avant dans le Harvester (version avec objets)
 
 *** Tue 16 Jun
 **** Work planned
-***** DONE RÃ©soudre le problÃ¨me des codes Python qui font des erreurs d'interprÃ©tation (affiche "null" pour le moment)
+***** DONE Résoudre le problème des codes Python qui font des erreurs d'interprétation (affiche "null" pour le moment)
       SCHEDULED: <2015-06-18 thu.>
-***** DONE Finir les tests Ã©ventuels (clics rageurs, fonctionnement global)
+***** DONE Finir les tests éventuels (clics rageurs, fonctionnement global)
       SCHEDULED: <2015-06-19 fri.>
-***** DONE Finir l'intÃ©gration avec le code d'HervÃ©
+***** DONE Finir l'intégration avec le code d'Hervé
       SCHEDULED: <2015-06-19 fri.>
-***** DONE Etudier le cas des boucles infinies dans le code Ã©lÃ¨ve
+***** DONE Etudier le cas des boucles infinies dans le code élève
       SCHEDULED: <2015-06-22 mon.>
 **** What is done
-- Correction de quelques bugs dans les rÃ©-exÃ©cutions de codes Ã©lÃ¨ve
-- RÃ©implÃ©mentation de la classe de statistiques (on oublie le csv pour l'instant, Ã©tant donnÃ© qu'il y a des virgules dans les logs d'erreur)
+- Correction de quelques bugs dans les ré-exécutions de codes élève
+- Réimplémentation de la classe de statistiques (on oublie le csv pour l'instant, étant donné qu'il y a des virgules dans les logs d'erreur)
 
 *** Wed 17 Jun
 **** Work planned
-***** TODO RÃ©cupÃ©rer une nouvelle machine
+***** TODO Récupérer une nouvelle machine
       SCHEDULED: <2015-06-18 thu.>
-***** DONE Rendre le code propre dans toutes les classes dÃ©jÃ  Ã©crites
+***** DONE Rendre le code propre dans toutes les classes déjà écrites
       SCHEDULED: <2015-06-18 thu.>
-***** DONE ProblÃ¨me sur les leÃ§ons traitant de la rÃ©cursivitÃ©
+***** DONE Problème sur les leçons traitant de la récursivité
       SCHEDULED: <2015-06-18 thu.>
-***** DONE Etudier la rÃ©trocompatibilitÃ© du programme (exercices qui ont changÃ© de nom...)
+***** DONE Etudier la rétrocompatibilité du programme (exercices qui ont changé de nom...)
       SCHEDULED: <2015-06-19 fri.>
-      Est-ce que Ã§a a vraiment un intÃ©rÃªt, Ã©tant donnÃ© que ce sont, pour la plupart d'entre eux, des exercices qui n'existent plus actuellement dans la PLM ?
-      Pour l'instant, Ã§a ne fonctionne pas vraiment. 
-***** DONE RÃ©aliser des tests sur de grandes masses de donnÃ©es
+      Est-ce que ça a vraiment un intérêt, étant donné que ce sont, pour la plupart d'entre eux, des exercices qui n'existent plus actuellement dans la PLM ?
+      Pour l'instant, ça ne fonctionne pas vraiment. 
+***** DONE Réaliser des tests sur de grandes masses de données
       SCHEDULED: <2015-06-19 fri.>
-      Pour cela, il faut une machine plus puissante et surveiller l'exÃ©cution du code pendant toute sa durÃ©e, quitte Ã  relancer le code plusieurs fois. 
-      Le test a Ã©tÃ© effectuÃ© sur 150 branches pour un total de prÃ¨s de 6600 fichiers. 
+      Pour cela, il faut une machine plus puissante et surveiller l'exécution du code pendant toute sa durée, quitte à relancer le code plusieurs fois. 
+      Le test a été effectué sur 150 branches pour un total de près de 6600 fichiers. 
 **** What is done
 - Jabber fonctionne sur ma machine
-- ExÃ©cution sur plus de branches que par le passÃ© (environ 20 branches avant l'arrÃªt du programme, soit Ã  cause de la mÃ©moire, soit Ã  cause du processeur)
-- RÃ©sultats obtenus sur 100 branches
-- On vÃ©rifie que si l'exÃ©cution est stoppÃ©e manuellement, c'est que l'Ã©lÃ¨ve a potentiellement rÃ©alisÃ© une boucle infinie, et on en gÃ¨re l'exÃ©cution
-- Le code fonctionne, mais il peut parfois s'arrÃªter sans aucune bonne raison apparente
-- Plusieurs tentatives pour rÃ©duire l'espace mÃ©moire utilisÃ© par le programme, sans succÃ¨s
+- Exécution sur plus de branches que par le passé (environ 20 branches avant l'arrêt du programme, soit à cause de la mémoire, soit à cause du processeur)
+- Résultats obtenus sur 100 branches
+- On vérifie que si l'exécution est stoppée manuellement, c'est que l'élève a potentiellement réalisé une boucle infinie, et on en gère l'exécution
+- Le code fonctionne, mais il peut parfois s'arrêter sans aucune bonne raison apparente
+- Plusieurs tentatives pour réduire l'espace mémoire utilisé par le programme, sans succès
 
 *** Thu 18 Jun
 **** Work planned
 ***** DONE Commenter le code
       SCHEDULED: <2015-06-22 mon.>
 **** What is done
-- Premiers tests de crÃ©ation d'un jar pour l'exÃ©cution Ã  distance (Ã§a fonctionne bien en console)
-- LeÃ§ons sur la rÃ©cursivitÃ© normalement toutes gÃ©rÃ©es
-- Javadoc crÃ©Ã©e dans les classes qui concernent mon travail
+- Premiers tests de création d'un jar pour l'exécution à distance (ça fonctionne bien en console)
+- Leçons sur la récursivité normalement toutes gérées
+- Javadoc créée dans les classes qui concernent mon travail
 
 *** Fri 19 Jun
 **** Work planned
 ***** DONE Lancer le programme sur toutes les branches
       SCHEDULED: <2015-06-22 mon.>
-***** DONE CrÃ©er un jar
+***** DONE Créer un jar
       SCHEDULED: <2015-06-19 fri.>
-***** DONE  GÃ©rer les boucles infinies
+***** DONE  Gérer les boucles infinies
       SCHEDULED: <2015-06-22 mon.>
 **** What is done
-- VÃ©rification approfondie des erreurs rÃ©cupÃ©rÃ©es : certaines erreurs n'ont pas de consistance puisque l'exercice n'existe plus dans la PLM
-- Refactoring du code terminÃ©
-- Fusion du code avec le code d'HervÃ©
-- Jar prÃªt Ã  Ãªtre exÃ©cutÃ© sous rÃ©serve de surveillance accrue
-- /!\ DÃ©bug ultime du code qui peut maintenant s'exÃ©cuter sur n'importe quelle machine possÃ©dant au moins 2Go de RAM disponible pour Java et un processeur lambda (joue sur la vitesse de calcul)
+- Vérification approfondie des erreurs récupérées : certaines erreurs n'ont pas de consistance puisque l'exercice n'existe plus dans la PLM
+- Refactoring du code terminé
+- Fusion du code avec le code d'Hervé
+- Jar prêt à être exécuté sous réserve de surveillance accrue
+- /!\ Débug ultime du code qui peut maintenant s'exécuter sur n'importe quelle machine possédant au moins 2Go de RAM disponible pour Java et un processeur lambda (joue sur la vitesse de calcul)
 
 ** Week 22 Jun
 *** Mon 22 Jun
 **** Work planned
-***** DONE S'occuper de l'exÃ©cution des exercices sur la Moria
+***** DONE S'occuper de l'exécution des exercices sur la Moria
       SCHEDULED: <2015-06-22 mon.>
-***** DONE VÃ©rifier si les exercices Ã  exÃ©cuter sont prÃ©sents dans la liste des exercices encore implantÃ©s
+***** DONE Vérifier si les exercices à exécuter sont présents dans la liste des exercices encore implantés
       SCHEDULED: <2015-06-23 tue.>
-***** DONE CrÃ©er un monde erreur
+***** DONE Créer un monde erreur
       SCHEDULED: <2015-06-22 mon.>
-***** TODO Implanter le monde erreur et tester son exÃ©cution
-      SCHEDULED: <2015-06-22 mon.>
+***** TODO Implanter le monde erreur et tester son exécution
+      SCHEDULED: <2015-06-26 fri..>
 **** What is done
-- Correction de quelques bugs sur l'exÃ©cution des exercices qui ont changÃ© de nom
+- Correction de quelques bugs sur l'exécution des exercices qui ont changé de nom
 - Etude de la PLM pour l'implantation des mondes erreurs
 
 *** Tue 23 Jun
 **** Work planned
 **** What is done
 - Correction d'un bug dans le reparcours des branches
+- Etude approfondie de la PLM
 
+*** Wed 24 Jun
+**** Work planned
+**** What is done
+- Nouvelle recorrection dans le reparcours des traces
+- Accueil des deux nouveaux stagiaires
+- Première tentative d'ajout de mondes leurre
+
+*** Thu 25 Jun
+**** Work planned
+***** TODO Vérifier que les mondes leurre sont testés
+      SCHEDULED: <2015-06-26 fri.>
+***** TODO Faire afficher le bon message à la PLM
+      SCHEDULED: <2015-06-26 fri.>
+**** What is done
+- Mondes leurre ajoutés (il faut encore que ça affiche le bon message dans la PLM, et là, c'est une autre paire de manche...)
+- Plusieurs essais réalisés, mais je ne sais pas si les mondes leurres sont testés ou non
+
+*** Fri 26 Jun
+**** Work planned
+**** What is done
+
+** Week 29 Jun
+*** Mon 29 Jun
+**** Work planned
+**** What is done
