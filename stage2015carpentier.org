@@ -99,17 +99,21 @@
 - Première tentative d'ajout de mondes leurre
 
 *** Thu 25 Jun
-***** TODO Vérifier que les mondes leurre sont testés
-      SCHEDULED: <2015-06-26 fri.>
-***** TODO Faire afficher le bon message à la PLM
-      SCHEDULED: <2015-06-26 fri.>
+**** TODO Vérifier que les mondes leurre sont compilés
+      SCHEDULED: <2015-06-29 mon.>
+**** TODO Faire afficher le bon message à la PLM
+      SCHEDULED: <2015-06-29 mon.>
 
-- Mondes leurre ajoutés (il faut encore que ça affiche le bon message dans la PLM, et là, c'est une autre paire de manche...)
+- Premiers mondes leurre ajoutés (il faut encore que ça affiche le bon message dans la PLM, et là, c'est une autre paire de manche...)
 - Plusieurs essais réalisés, mais je ne sais pas si les mondes leurres sont testés ou non
 
 *** Fri 26 Jun
+**** TODO Continuer de modifier les classes attenantes à l'ajout d'un test d'un monde leurre
+     SCHEDULED: <2015-06-29 mon.>
 
-
+- Les mondes leurre ne sont ni testés, ni compilés (il doit probablement y avoir quelque chose à faire avec getCompilableContent)
+- Le code avance vers sa structure finale, il reste seulement à modifier quelques classes...
+ 
 ** Week 29 Jun
 *** Mon 29 Jun
 
