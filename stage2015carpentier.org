@@ -134,4 +134,7 @@
 - Avancée dans les deux premiers points du jour précédent
 
 *** Thu 2 Jul
+**** TODO Vérifier les résultats de la réexecution des codes élèves (il y a des résultats étranges)
+      SCHEDULED: <2015-07-03 fri.>
+
 - Utilisation possible de plusieurs fichiers leurre dans un exercice donné (il faut donner comme nom à ces fichiers <exo>CommonErr[0-9]* avec un ordre à respecter absolument (en gros, pas de fichier CommonErr3 sans un CommonErr0, 1 et 2))
