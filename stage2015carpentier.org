@@ -122,9 +122,9 @@
 **** DONE Utiliser la structure de Vector<Vector<World>> pour tester plusieurs résultats faux
       SCHEDULED: <2015-07-02 thu.>
 **** TODO Trouver le moyen de changer le message qui s'affiche selon l'exercice lancé
-      SCHEDULED: <2015-07-02 thu.>
+      SCHEDULED: <2015-07-06 mon.>
 **** TODO Réfléchir à la manière d'ajouter les mondes leurre dans la PLM
-      SCHEDULED: <2015-07-03 fri.>
+      SCHEDULED: <2015-07-07 tue.>
 
 - Le code est committé dans mon repo forké de la PLM (http://www.github.com/Glasfeu/PLM)
 - Il permet d'ajouter des mondes leurre en java, scala et python, mais affiche pour le moment la même erreur (voir TODO du 25 juin)
@@ -135,6 +135,9 @@
 
 *** Thu 2 Jul
 **** TODO Vérifier les résultats de la réexecution des codes élèves (il y a des résultats étranges)
-      SCHEDULED: <2015-07-03 fri.>
+      SCHEDULED: <2015-07-06 mon.>
+      Problème trouvé : le code élève n'est pas exécuté, donc évidemment, ça rend les choses un peu plus compliquées.
+      Il y a eu un autre petit problème, une inversion entre deux mondes, mais le problème n'en est plus un.
 
 - Utilisation possible de plusieurs fichiers leurre dans un exercice donné (il faut donner comme nom à ces fichiers <exo>CommonErr[0-9]* avec un ordre à respecter absolument (en gros, pas de fichier CommonErr3 sans un CommonErr0, 1 et 2))
+- Problème trouvé, voir ci-dessus.
