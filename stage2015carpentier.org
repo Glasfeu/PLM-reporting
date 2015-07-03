@@ -39,7 +39,7 @@
 - Plusieurs tentatives pour réduire l'espace mémoire utilisé par le programme, sans succès
 
 *** TODO Récupérer une nouvelle machine
-      SCHEDULED: <2015-06-18 thu.>
+      SCHEDULED: <2015-07-06 mon.>
 *** DONE Rendre le code propre dans toutes les classes déjà écrites
       SCHEDULED: <2015-06-18 thu.>
 *** DONE Problème sur les leçons traitant de la récursivité
@@ -147,9 +147,18 @@
 
 - Utilisation possible de plusieurs fichiers leurre dans un exercice donné (il faut donner comme nom à ces fichiers <exo>CommonErr[0-9]* avec un ordre à respecter absolument (en gros, pas de fichier CommonErr3 sans un CommonErr0, 1 et 2))
 
-*** TODO Vérifier les résultats de la réexecution des codes élèves (il y a des résultats étranges)
+*** DONE Vérifier les résultats de la réexecution des codes élèves (il y a des résultats étranges)
       SCHEDULED: <2015-07-06 mon.>
       Problème trouvé : le code élève n'est pas exécuté, donc évidemment, ça rend les choses un peu plus compliquées.
       Il y a eu un autre petit problème, une inversion entre deux mondes, mais le problème n'en est plus un.
 
 ** Fri 3 Jul
+
+- Solution au problème : le programme n'a pas le temps de modifier le currentWorld. Du coup, il faut rajouter une méthode permettant d'attendre le runner de Game.java.
+- Nouveau problème : les tests ont été effectués avec un Thread.sleep(x) avec x = 1000 (ne fonctionne pas) et x = 5000 (fonctionne parfois). On a plus de 48000 fichiers d'erreur. Un simple calcul nous donne une durée d'exécution comprise entre 13 heures 20 minutes et 66 heures et 40 minutes pour environ 1386 branches sur l'intervalle d'attente de 1 seconde à 5 secondes.
+- Si la solution à ce problème est trouvée, il est possible de modifier l'implémentation de la gestion des boucles infinies, avec un timer. L'idée est de mesurer le temps que prend la solution à se compiler et s'exécuter et, à l'aide d'un facteur multiplicateur compris entre 1,1 et 2, estimer le temps avant le timeout pour le code de l'élève. Si ce temps est dépassé, on lui annonce gentillment que sa solution n'en est pas une dans un temps raisonnable.
+
+*** TODO Régler les temps d'exécution pour la réexécution des codes élève
+      SCHEDULED: <2015-07-06 mon.>
+*** TODO Etudier la question des temps d'exécution pour les boucles infinies
+      SCHEDULED: <2015-07-08 wed.>
