@@ -4,6 +4,10 @@
 
 * Week 15 Jun
 ** Mon 15 Jun
+
+- Premières modifications du code des classes réalisées lors du PIDR
+- Création d'une classe à part qui réalise le travail qui était fait avant dans le Harvester (version avec objets)
+
 *** DONE Modifier le code du Harvester pour l'intégrer au travail déjà effectué
      SCHEDULED: <2015-06-17 wed.>
 *** DONE Retirer de la liste les clics rageurs sur Run quand du code ne fonctionne pas
@@ -11,10 +15,11 @@
 *** DONE Vérifier le bon fonctionnement du Harvester et des nouvelles méthodes afin d'être sûr que l'on récupère bien les bonnes erreurs
      SCHEDULED: <2015-06-22 mon.>
 
-- Premières modifications du code des classes réalisées lors du PIDR
-- Création d'une classe à part qui réalise le travail qui était fait avant dans le Harvester (version avec objets)
-
 ** Tue 16 Jun
+
+- Correction de quelques bugs dans les ré-exécutions de codes élève
+- Réimplémentation de la classe de statistiques (on oublie le csv pour l'instant, étant donné qu'il y a des virgules dans les logs d'erreur)
+
 *** DONE Résoudre le problème des codes Python qui font des erreurs d'interprétation (affiche "null" pour le moment)
       SCHEDULED: <2015-06-18 thu.>
 *** DONE Finir les tests éventuels (clics rageurs, fonctionnement global)
@@ -24,10 +29,15 @@
 *** DONE Etudier le cas des boucles infinies dans le code élève
       SCHEDULED: <2015-06-22 mon.>
 
-- Correction de quelques bugs dans les ré-exécutions de codes élève
-- Réimplémentation de la classe de statistiques (on oublie le csv pour l'instant, étant donné qu'il y a des virgules dans les logs d'erreur)
-
 ** Wed 17 Jun
+
+- Jabber fonctionne sur ma machine
+- Exécution sur plus de branches que par le passé (environ 20 branches avant l'arrêt du programme, soit à cause de la mémoire, soit à cause du processeur)
+- Résultats obtenus sur 100 branches
+- On vérifie que si l'exécution est stoppée manuellement, c'est que l'élève a potentiellement réalisé une boucle infinie, et on en gère l'exécution
+- Le code fonctionne, mais il peut parfois s'arrêter sans aucune bonne raison apparente
+- Plusieurs tentatives pour réduire l'espace mémoire utilisé par le programme, sans succès
+
 *** TODO Récupérer une nouvelle machine
       SCHEDULED: <2015-06-18 thu.>
 *** DONE Rendre le code propre dans toutes les classes déjà écrites
@@ -43,22 +53,23 @@
       Pour cela, il faut une machine plus puissante et surveiller l'exécution du code pendant toute sa durée, quitte à relancer le code plusieurs fois.
       Le test a été effectué sur 150 branches pour un total de près de 6600 fichiers.
 
-- Jabber fonctionne sur ma machine
-- Exécution sur plus de branches que par le passé (environ 20 branches avant l'arrêt du programme, soit à cause de la mémoire, soit à cause du processeur)
-- Résultats obtenus sur 100 branches
-- On vérifie que si l'exécution est stoppée manuellement, c'est que l'élève a potentiellement réalisé une boucle infinie, et on en gère l'exécution
-- Le code fonctionne, mais il peut parfois s'arrêter sans aucune bonne raison apparente
-- Plusieurs tentatives pour réduire l'espace mémoire utilisé par le programme, sans succès
-
 ** Thu 18 Jun
-*** DONE Commenter le code
-      SCHEDULED: <2015-06-22 mon.>
 
 - Premiers tests de création d'un jar pour l'exécution à distance (ça fonctionne bien en console)
 - Leçons sur la récursivité normalement toutes gérées
 - Javadoc créée dans les classes qui concernent mon travail
 
+*** DONE Commenter le code
+      SCHEDULED: <2015-06-22 mon.>
+
 ** Fri 19 Jun
+
+- Vérification approfondie des erreurs récupérées : certaines erreurs n'ont pas de consistance puisque l'exercice n'existe plus dans la PLM
+- Refactoring du code terminé
+- Fusion du code avec le code d'Hervé
+- Jar prêt à être exécuté sous réserve de surveillance accrue
+- Débug du code qui peut maintenant s'exécuter sur n'importe quelle machine possédant au moins 2Go de RAM disponible pour Java et un processeur lambda (joue sur la vitesse de calcul)
+
 *** DONE Lancer le programme sur toutes les branches
       SCHEDULED: <2015-06-22 mon.>
 *** DONE Créer un jar
@@ -66,14 +77,12 @@
 *** DONE  Gérer les boucles infinies
       SCHEDULED: <2015-06-22 mon.>
 
-- Vérification approfondie des erreurs récupérées : certaines erreurs n'ont pas de consistance puisque l'exercice n'existe plus dans la PLM
-- Refactoring du code terminé
-- Fusion du code avec le code d'Hervé
-- Jar prêt à être exécuté sous réserve de surveillance accrue
-- /!\ Débug ultime du code qui peut maintenant s'exécuter sur n'importe quelle machine possédant au moins 2Go de RAM disponible pour Java et un processeur lambda (joue sur la vitesse de calcul)
-
 * Week 22 Jun
 ** Mon 22 Jun
+
+- Correction de quelques bugs sur l'exécution des exercices qui ont changé de nom
+- Etude de la PLM pour l'implantation des mondes erreurs
+
 *** DONE S'occuper de l'exécution des exercices sur la Moria
       SCHEDULED: <2015-06-22 mon.>
 *** DONE Vérifier si les exercices à exécuter sont présents dans la liste des exercices encore implantés
@@ -82,9 +91,6 @@
       SCHEDULED: <2015-06-22 mon.>
 *** DONE Implanter le monde erreur et tester son exécution
       SCHEDULED: <2015-06-26 fri..>
-
-- Correction de quelques bugs sur l'exécution des exercices qui ont changé de nom
-- Etude de la PLM pour l'implantation des mondes erreurs
 
 ** Tue 23 Jun
 
@@ -98,26 +104,34 @@
 - Première tentative d'ajout de mondes leurre
 
 ** Thu 25 Jun
+
+- Premiers mondes leurre ajoutés (il faut encore que ça affiche le bon message dans la PLM, et là, c'est une autre paire de manche...)
+- Plusieurs essais réalisés, mais je ne sais pas si les mondes leurres sont testés ou non
+
 *** DONE Vérifier que les mondes leurre sont compilés
       SCHEDULED: <2015-06-29 mon.>
 *** TODO Faire afficher le bon message à la PLM
       SCHEDULED: <2015-07-02 thu.>
 
-- Premiers mondes leurre ajoutés (il faut encore que ça affiche le bon message dans la PLM, et là, c'est une autre paire de manche...)
-- Plusieurs essais réalisés, mais je ne sais pas si les mondes leurres sont testés ou non
-
 ** Fri 26 Jun
-*** DONE Continuer de modifier les classes attenantes à l'ajout d'un test d'un monde leurre
-     SCHEDULED: <2015-06-29 mon.>
 
 - Les mondes leurre ne sont ni testés, ni compilés (il doit probablement y avoir quelque chose à faire avec getCompilableContent)
 - Le code avance vers sa structure finale, il reste seulement à modifier quelques classes...
 
+*** DONE Continuer de modifier les classes attenantes à l'ajout d'un test d'un monde leurre
+     SCHEDULED: <2015-06-29 mon.>
+
 * Week 29 Jun
 ** Mon 29 Jun
+
 - Premier affichage du bon résultat mais problème au niveau de son obtention
 
 ** Tue 30 Jun
+
+- Le code est committé dans mon repo forké de la PLM (http://www.github.com/Glasfeu/PLM)
+- Il permet d'ajouter des mondes leurre en java, scala et python, mais affiche pour le moment la même erreur (voir TODO du 25 juin)
+- Les trois langages suscités sont obligatoires pour qu'une erreur soit testée
+
 *** DONE Utiliser la structure de Vector<Vector<World>> pour tester plusieurs résultats faux
       SCHEDULED: <2015-07-02 thu.>
 *** TODO Trouver le moyen de changer le message qui s'affiche selon l'exercice lancé
@@ -125,18 +139,17 @@
 *** TODO Réfléchir à la manière d'ajouter les mondes leurre dans la PLM
       SCHEDULED: <2015-07-07 tue.>
 
-- Le code est committé dans mon repo forké de la PLM (http://www.github.com/Glasfeu/PLM)
-- Il permet d'ajouter des mondes leurre en java, scala et python, mais affiche pour le moment la même erreur (voir TODO du 25 juin)
-- Les trois langages suscités sont obligatoires pour qu'une erreur soit testée
-
 ** Wed 1 Jul
+
 - Avancée dans les deux premiers points du jour précédent
 
 ** Thu 2 Jul
+
+- Utilisation possible de plusieurs fichiers leurre dans un exercice donné (il faut donner comme nom à ces fichiers <exo>CommonErr[0-9]* avec un ordre à respecter absolument (en gros, pas de fichier CommonErr3 sans un CommonErr0, 1 et 2))
+
 *** TODO Vérifier les résultats de la réexecution des codes élèves (il y a des résultats étranges)
       SCHEDULED: <2015-07-06 mon.>
       Problème trouvé : le code élève n'est pas exécuté, donc évidemment, ça rend les choses un peu plus compliquées.
       Il y a eu un autre petit problème, une inversion entre deux mondes, mais le problème n'en est plus un.
 
-- Utilisation possible de plusieurs fichiers leurre dans un exercice donné (il faut donner comme nom à ces fichiers <exo>CommonErr[0-9]* avec un ordre à respecter absolument (en gros, pas de fichier CommonErr3 sans un CommonErr0, 1 et 2))
-- Problème trouvé, voir ci-dessus.
+** Fri 3 Jul
