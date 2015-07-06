@@ -139,11 +139,11 @@
 *** TODO Réfléchir à la manière d'ajouter les mondes leurre dans la PLM
       SCHEDULED: <2015-07-07 tue.>
 
-** Wed 1 Jul
+** Wed 01 Jul
 
 - Avancée dans les deux premiers points du jour précédent
 
-** Thu 2 Jul
+** Thu 02 Jul
 
 - Utilisation possible de plusieurs fichiers leurre dans un exercice donné (il faut donner comme nom à ces fichiers <exo>CommonErr[0-9]* avec un ordre à respecter absolument (en gros, pas de fichier CommonErr3 sans un CommonErr0, 1 et 2))
 
@@ -152,13 +152,26 @@
       Problème trouvé : le code élève n'est pas exécuté, donc évidemment, ça rend les choses un peu plus compliquées.
       Il y a eu un autre petit problème, une inversion entre deux mondes, mais le problème n'en est plus un.
 
-** Fri 3 Jul
+** Fri 03 Jul
 
 - Solution au problème : le programme n'a pas le temps de modifier le currentWorld. Du coup, il faut rajouter une méthode permettant d'attendre le runner de Game.java.
 - Nouveau problème : les tests ont été effectués avec un Thread.sleep(x) avec x = 1000 (ne fonctionne pas) et x = 5000 (fonctionne parfois). On a plus de 48000 fichiers d'erreur. Un simple calcul nous donne une durée d'exécution comprise entre 13 heures 20 minutes et 66 heures et 40 minutes pour environ 1386 branches sur l'intervalle d'attente de 1 seconde à 5 secondes.
-- Si la solution à ce problème est trouvée, il est possible de modifier l'implémentation de la gestion des boucles infinies, avec un timer. L'idée est de mesurer le temps que prend la solution à se compiler et s'exécuter et, à l'aide d'un facteur multiplicateur compris entre 1,1 et 2, estimer le temps avant le timeout pour le code de l'élève. Si ce temps est dépassé, on lui annonce gentillment que sa solution n'en est pas une dans un temps raisonnable.
+- Si la solution à ce problème est trouvée, il est possible de modifier l'implémentation de la gestion des boucles infinies, avec un timer. L'idée est de mesurer le temps que prend la solution à se compiler et s'exécuter et, à l'aide d'un facteur multiplicateur compris entre 1,1 et 2, estimer le temps avant le timeout pour le code de l'élève. Si ce temps est dépassé, on lui annonce gentillement que sa solution n'en est pas une dans un temps raisonnable.
 
-*** TODO Régler les temps d'exécution pour la réexécution des codes élève
+*** DONE Régler les temps d'exécution pour la réexécution des codes élève
       SCHEDULED: <2015-07-06 mon.>
-*** TODO Etudier la question des temps d'exécution pour les boucles infinies
+*** DONE Etudier la question des temps d'exécution pour les boucles infinies
+      SCHEDULED: <2015-07-08 wed.>
+
+* Week 06 Jul
+** Mon 06 Jul
+
+- Regénération d'un jar de la PLM avec une modification de Game.java permettant l'attente du Thread lancé par runner.
+- Ajout d'un timeout pour l'exécution du code élève, basé sur 15 secondes au maximum.
+
+*** TODO Essayer de trouver le meilleur temps avant le timeout en fonction de l'exercice
+      SCHEDULED: <2015-07-07 tue.>
+*** TODO Tester l'exécution du programme
+      SCHEDULED: <2015-07-08 wed.>
+*** TODO Lancer l'exécution du programme sur une machine plus puissante
       SCHEDULED: <2015-07-08 wed.>
