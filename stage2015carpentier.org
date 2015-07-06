@@ -38,7 +38,7 @@
 - Le code fonctionne, mais il peut parfois s'arrêter sans aucune bonne raison apparente
 - Plusieurs tentatives pour réduire l'espace mémoire utilisé par le programme, sans succès
 
-*** TODO Récupérer une nouvelle machine
+*** DONE Récupérer une nouvelle machine
       SCHEDULED: <2015-07-06 mon.>
 *** DONE Rendre le code propre dans toutes les classes déjà écrites
       SCHEDULED: <2015-06-18 thu.>
@@ -110,7 +110,7 @@
 
 *** DONE Vérifier que les mondes leurre sont compilés
       SCHEDULED: <2015-06-29 mon.>
-*** TODO Faire afficher le bon message à la PLM
+*** DONE Faire afficher le bon message à la PLM
       SCHEDULED: <2015-07-02 thu.>
 
 ** Fri 26 Jun
@@ -129,12 +129,12 @@
 ** Tue 30 Jun
 
 - Le code est committé dans mon repo forké de la PLM (http://www.github.com/Glasfeu/PLM)
-- Il permet d'ajouter des mondes leurre en java, scala et python, mais affiche pour le moment la même erreur (voir TODO du 25 juin)
+- Il permet d'ajouter des mondes leurre en java, scala et python, mais affiche pour le moment la même erreur (voir Todo du 25 juin)
 - Les trois langages suscités sont obligatoires pour qu'une erreur soit testée
 
 *** DONE Utiliser la structure de Vector<Vector<World>> pour tester plusieurs résultats faux
       SCHEDULED: <2015-07-02 thu.>
-*** TODO Trouver le moyen de changer le message qui s'affiche selon l'exercice lancé
+*** DONE Trouver le moyen de changer le message qui s'affiche selon l'exercice lancé
       SCHEDULED: <2015-07-06 mon.>
 *** TODO Réfléchir à la manière d'ajouter les mondes leurre dans la PLM
       SCHEDULED: <2015-07-07 tue.>
@@ -168,6 +168,7 @@
 
 - Regénération d'un jar de la PLM avec une modification de Game.java permettant l'attente du Thread lancé par runner.
 - Ajout d'un timeout pour l'exécution du code élève, basé sur 15 secondes au maximum.
+- Modification de la classe Exercise pour permettre de "choisir" le message à afficher. Celui-ci doit être écrit dans le fichier <exo>CommonErr[0-9]*.html correspondant à l'erreur trouvée, et doit être au même endroit que le fichier portant le même nom avec l'extension .java.
 
 *** TODO Essayer de trouver le meilleur temps avant le timeout en fonction de l'exercice
       SCHEDULED: <2015-07-07 tue.>
@@ -175,3 +176,5 @@
       SCHEDULED: <2015-07-08 wed.>
 *** TODO Lancer l'exécution du programme sur une machine plus puissante
       SCHEDULED: <2015-07-08 wed.>
+
+** Tue 07 Jul
