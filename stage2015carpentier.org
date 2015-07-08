@@ -137,7 +137,7 @@
 *** DONE Trouver le moyen de changer le message qui s'affiche selon l'exercice lancé
       SCHEDULED: <2015-07-06 mon.>
 *** TODO Réfléchir à la manière d'ajouter les mondes leurre dans la PLM
-      SCHEDULED: <2015-07-07 tue.>
+      SCHEDULED: <2015-07-10 fri.>
 
 ** Wed 01 Jul
 
@@ -170,11 +170,24 @@
 - Ajout d'un timeout pour l'exécution du code élève, basé sur 15 secondes au maximum.
 - Modification de la classe Exercise pour permettre de "choisir" le message à afficher. Celui-ci doit être écrit dans le fichier <exo>CommonErr[0-9]*.html correspondant à l'erreur trouvée, et doit être au même endroit que le fichier portant le même nom avec l'extension .java.
 
-*** TODO Essayer de trouver le meilleur temps avant le timeout en fonction de l'exercice
+*** DONE Essayer de trouver le meilleur temps avant le timeout en fonction de l'exercice
       SCHEDULED: <2015-07-07 tue.>
-*** TODO Tester l'exécution du programme
+*** DONE Tester l'exécution du programme
       SCHEDULED: <2015-07-08 wed.>
 *** TODO Lancer l'exécution du programme sur une machine plus puissante
-      SCHEDULED: <2015-07-08 wed.>
+      SCHEDULED: <2015-07-10 fri.>
+*** TODO Etudier le cas d'un changement de langue pour l'affichage du texte des mondes leurre
+      SCHEDULED: <2015-07-10 fri.>
 
 ** Tue 07 Jul
+
+- Récupération et exécution du code correction de l'exercice. Le but est de trouver le temps d'exécution de ce code pour obtenir un timeout en fonction de celui-ci. On stocke dans une hashmap les temps d'exécution de ces codes en fonction de l'exercice, pour qu'on ne réalise pas à nouveau ces exécutions lors des autres exécutions futures, étant donné que l'ordinateur ne change théoriquement pas.
+
+** Wed 08 Jul
+
+- Correction de plusieurs bugs dans la réexécution du code de l'élève, dus au fait que certains exercices aient changé de nom.
+- Correction d'un bug dans le calcul du temps de compilation et d'exécution du code de la correction.
+
+*** TODO Améliorer le moyen d'exécuter la correction d'un exercice
+      SCHEDULED: <2015-07-10 fri.>
+      - Plutôt que d'exécuter le code de la correction à la manière de celui du code élève, il faudrait voir pour utiliser le demoRunner et attendre la fin de la démo. Pour cela, il faut modifier le jar de la PLM que l'on embarque dans le reaper.
