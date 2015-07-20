@@ -222,4 +222,7 @@
 ** Mon 20 Jul
 - 
 
-*** TODO 
+*** TODO Gérer les différents cas de boucles infinies dans le test du code élève dans la PLM
+    SCHEDULED: <2015-07-31 fri.>
+    - Le problème vient du fait que la PLM exécute les codes de solution et d'erreur avant le lancement complet de l'univers. Si l'un de ces codes donne une boucle infinie, il s'exécute... indéfiniment. L'idée serait d'utiliser un timeout (encore...), mais qui nous dit que le monde obtenu après avoir arreté l'exécution sera celui obtenu par l'élève ?
+
