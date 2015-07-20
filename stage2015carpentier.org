@@ -174,7 +174,7 @@
       SCHEDULED: <2015-07-07 tue.>
 *** DONE Tester l'exécution du programme
       SCHEDULED: <2015-07-08 wed.>
-*** TODO Lancer l'exécution du programme sur une machine plus puissante
+*** DONE Lancer l'exécution du programme sur une machine plus puissante
       SCHEDULED: <2015-07-10 fri.>
 *** TODO Etudier le cas d'un changement de langue pour l'affichage du texte des mondes leurre
       SCHEDULED: <2015-07-10 fri.>
@@ -188,6 +188,38 @@
 - Correction de plusieurs bugs dans la réexécution du code de l'élève, dus au fait que certains exercices aient changé de nom.
 - Correction d'un bug dans le calcul du temps de compilation et d'exécution du code de la correction.
 
-*** TODO Améliorer le moyen d'exécuter la correction d'un exercice
+*** Améliorer le moyen d'exécuter la correction d'un exercice
       SCHEDULED: <2015-07-10 fri.>
       - Plutôt que d'exécuter le code de la correction à la manière de celui du code élève, il faudrait voir pour utiliser le demoRunner et attendre la fin de la démo. Pour cela, il faut modifier le jar de la PLM que l'on embarque dans le reaper.
+** Thu 09 Jul
+** Fri 10 Jul
+- Amélioration du code de ré-exécution du code des élèves
+- Correction d'un bug dans la PLM empechant le bon fonctionnement de la ré-exécution du code des élèves (problème dans le clipping pour l'univers des tortues)
+
+** Sat 11 Jul
+- Modifications mineures dans le code du reaper et de la PLM (parcours des branches aléatoire)
+- Exécution du code pour obtenir les erreurs par Martin Quinson
+
+** Sun 12 Jul
+- Fin de l'exécution du code
+- Récupération des fichiers de log d'élèves (43K)
+
+* Week 13 Jul
+** Wed 15 Jul
+- Mise sous forme de tableur des fichiers de log
+- Recherche d'un critère d'importance des erreurs : selon le nombre de fois où l'erreur est apparue et selon la moyenne du nombre de soumissions par élève
+- Début de l'étude des erreurs importantes
+
+** Thu 16 Jul
+- Suite de l'étude des erreurs importantes
+- Un premier problème se pose : parfois, une erreur peut etre atteinte par plusieurs codes différents - l'idée d'un retour élève sur la pertinence du message d'aide affiché prend son sens ici. 
+
+** Fri 17 Jul
+- Suite de l'étude des erreurs importantes
+- Certaines code d'erreurs trouvés dans l'ancienne version de la PLM mènent à la bonne solution
+
+* Week 20 Jul
+** Mon 20 Jul
+- 
+
+*** TODO 
