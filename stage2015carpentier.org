@@ -238,3 +238,7 @@
 
 ** Wed 22 Jul
 - Refactoring du code de test de la PLM
+- Etude du code de la vue du monde du baseball sur webPLM
+- Ecriture de quelques formules qui peuvent permettre de reprendre ce code
+
+** Thu 23 Jul
