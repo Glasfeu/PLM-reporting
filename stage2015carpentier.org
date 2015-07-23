@@ -220,9 +220,21 @@
 
 * Week 20 Jul
 ** Mon 20 Jul
-- 
+- Etude d'un nouvel exercice
 
 *** TODO Gérer les différents cas de boucles infinies dans le test du code élève dans la PLM
     SCHEDULED: <2015-07-31 fri.>
     - Le problème vient du fait que la PLM exécute les codes de solution et d'erreur avant le lancement complet de l'univers. Si l'un de ces codes donne une boucle infinie, il s'exécute... indéfiniment. L'idée serait d'utiliser un timeout (encore...), mais qui nous dit que le monde obtenu après avoir arreté l'exécution sera celui obtenu par l'élève ?
 
+    SCHEDULED: <2015-07-31 fri.>
+
+** Tue 21 Jul
+- Modification du programme de la PLM déjà écrit pour tester les erreurs communes, suite à une erreur survenue à l'ajout de plus d'une erreur dans plus d'un monde. 
+
+*** DONE Refactorer le code de test des mondes erreur dans la PLM
+    SCHEDULED: <2015-07-22 wed.>
+*** TODO Regarder et modifier le canvas du baseball sur webPLM
+    SCHEDULED: <2015-07-22 wed.>
+
+** Wed 22 Jul
+- Refactoring du code de test de la PLM
