@@ -136,7 +136,7 @@
       SCHEDULED: <2015-07-02 thu.>
 *** DONE Trouver le moyen de changer le message qui s'affiche selon l'exercice lancé
       SCHEDULED: <2015-07-06 mon.>
-*** TODO Réfléchir à la manière d'ajouter les mondes leurre dans la PLM
+*** DONE Réfléchir à la manière d'ajouter les mondes leurre dans la PLM
       SCHEDULED: <2015-07-10 fri.>
 
 ** Wed 01 Jul
@@ -191,44 +191,54 @@
 *** Améliorer le moyen d'exécuter la correction d'un exercice
       SCHEDULED: <2015-07-10 fri.>
       - Plutôt que d'exécuter le code de la correction à la manière de celui du code élève, il faudrait voir pour utiliser le demoRunner et attendre la fin de la démo. Pour cela, il faut modifier le jar de la PLM que l'on embarque dans le reaper.
+
 ** Thu 09 Jul
+
+- Vérification de l'absence d'autres bugs
+
 ** Fri 10 Jul
+
 - Amélioration du code de ré-exécution du code des élèves
 - Correction d'un bug dans la PLM empechant le bon fonctionnement de la ré-exécution du code des élèves (problème dans le clipping pour l'univers des tortues)
 
 ** Sat 11 Jul
+
 - Modifications mineures dans le code du reaper et de la PLM (parcours des branches aléatoire)
 - Exécution du code pour obtenir les erreurs par Martin Quinson
 
 ** Sun 12 Jul
+
 - Fin de l'exécution du code
 - Récupération des fichiers de log d'élèves (43K)
 
 * Week 13 Jul
 ** Wed 15 Jul
+
 - Mise sous forme de tableur des fichiers de log
 - Recherche d'un critère d'importance des erreurs : selon le nombre de fois où l'erreur est apparue et selon la moyenne du nombre de soumissions par élève
 - Début de l'étude des erreurs importantes
 
 ** Thu 16 Jul
+
 - Suite de l'étude des erreurs importantes
 - Un premier problème se pose : parfois, une erreur peut etre atteinte par plusieurs codes différents - l'idée d'un retour élève sur la pertinence du message d'aide affiché prend son sens ici. 
 
 ** Fri 17 Jul
+
 - Suite de l'étude des erreurs importantes
 - Certaines code d'erreurs trouvés dans l'ancienne version de la PLM mènent à la bonne solution
 
 * Week 20 Jul
 ** Mon 20 Jul
+
 - Etude d'un nouvel exercice
 
 *** TODO Gérer les différents cas de boucles infinies dans le test du code élève dans la PLM
     SCHEDULED: <2015-07-31 fri.>
-    - Le problème vient du fait que la PLM exécute les codes de solution et d'erreur avant le lancement complet de l'univers. Si l'un de ces codes donne une boucle infinie, il s'exécute... indéfiniment. L'idée serait d'utiliser un timeout (encore...), mais qui nous dit que le monde obtenu après avoir arreté l'exécution sera celui obtenu par l'élève ?
-
-    SCHEDULED: <2015-07-31 fri.>
+    - Le problème vient du fait que la PLM exécute les codes de solution et d'erreur avant le lancement complet de l'univers. Si l'un de ces codes donne une boucle infinie, il s'exécute... indéfiniment. L'idée serait d'utiliser un timeout (encore...), mais qui nous dit que le monde obtenu après avoir arreté l'exécution sera celui obtenu par l'élève
 
 ** Tue 21 Jul
+
 - Modification du programme de la PLM déjà écrit pour tester les erreurs communes, suite à une erreur survenue à l'ajout de plus d'une erreur dans plus d'un monde. 
 
 *** DONE Refactorer le code de test des mondes erreur dans la PLM
@@ -237,11 +247,13 @@
     SCHEDULED: <2015-07-22 wed.>
 
 ** Wed 22 Jul
+
 - Refactoring du code de test de la PLM
 - Etude du code de la vue du monde du baseball sur webPLM
 - Ecriture de quelques formules qui peuvent permettre de reprendre ce code
 
 ** Thu 23 Jul
+
 - Fin de l'étude du graphisme du monde du baseball
 - Suite de l'étude des erreurs de l'exercice du lundi 20 juillet
 
@@ -250,4 +262,23 @@
     - En une semaine, certes sans faire uniquement cette étude des erreurs, regarder les 944 erreurs communes d'un monde est fastidieux et relativement ennuyeux... C'est une mécanique, et comme toutes les mécaniques en informatique, on doit pouvoir trouver un moyen de l'automatiser. De plus, tous les fichiers n'ont pas été regardés : je m'étais souvent arreté (à partir du deuxième jour sur cet exercice) au premier fichier de chaque branche, étant donné que le code reste toujours très similaire entre les commits d'une meme branche. Aussi, si une semaine a suffi pour obtenir ce résultat (7 fichiers de leurre à la fin de cette journée), il semble que ça deviendra vite impossible de tout regarder, en sachant que, par exemple, l'exercice sur la Moria compte pas moins de 4 fois ce nombre de fichiers d'erreur...
 
 ** Fri 24 Jul
+
 - Etude des erreurs sur le meme exercice
+
+* Week 27 Jul
+** Mon 27 Jul
+
+- Correction d'un bug dans le parcours des erreurs classiques dans le client lourd de la PLM (il ne regardait pas tous les mondes et causait donc un problème). 
+- Etude d'un nouvel exercice (le deuxième). 
+
+** Tue 28 Jul
+
+- Fin de l'étude du second exercice -> 85% des erreurs sont traitées (bien ou non, en tout cas, on arrive au meme monde), 10% sont des boucles infinies qu'on ne peut pas vraiment tester et le reste représente les erreurs qui ne sortent qu'une fois ou deux et qui ne sont pas pertinentes. 
+
+*** TODO Attaquer l'étude d'un nouvel exercice
+    SCHEDULED: <2015-07-31 fri.>
+    - Je vais attendre le retour de Matthieu avant de toucher à webPLM, pour la simple et bonne raison que je n'ai aucune idée d'où regarder pour commencer...
+*** TODO Préparer un mail à envoyer pour OverCode
+    SCHEDULED: <2015-07-28 wed.>
+
+** Wed 29 Jul
