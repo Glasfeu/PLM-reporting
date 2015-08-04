@@ -275,10 +275,32 @@
 
 - Fin de l'étude du second exercice -> 85% des erreurs sont traitées (bien ou non, en tout cas, on arrive au meme monde), 10% sont des boucles infinies qu'on ne peut pas vraiment tester et le reste représente les erreurs qui ne sortent qu'une fois ou deux et qui ne sont pas pertinentes. 
 
-*** TODO Attaquer l'étude d'un nouvel exercice
+*** DONE Attaquer l'étude d'un nouvel exercice
     SCHEDULED: <2015-07-31 fri.>
     - Je vais attendre le retour de Matthieu avant de toucher à webPLM, pour la simple et bonne raison que je n'ai aucune idée d'où regarder pour commencer...
-*** TODO Préparer un mail à envoyer pour OverCode
+*** Préparer un mail à envoyer pour OverCode
     SCHEDULED: <2015-07-28 wed.>
 
 ** Wed 29 Jul
+
+- Recherche et étude de l'exercice suivant
+
+** Thu 30 Jul
+
+- Suite de l'étude
+
+** Fri 31 Jul
+
+- Suite et fin de l'étude
+- Début d'un nouvel exercice
+
+* Week 03 Aug
+** Mon 03 Aug
+
+- Suite de l'étude précédente (à cette occasion, il y a eu un petit problème : je suis tombé sur un exercice pour lequel les versions 2.4.11, 2.5 et web mènent à une erreur, mais pas dans la version pre-2.6, ce qui est plutot incompréhensible, vu que le code en faute n'a pas été modifié depuis mars 2015. La ligne en cause est dans la traduction en python de la commande forward() qui lui donnait un paramètre et que ce paramètre est interdit dans l'exercice en question. Le problème est que l'on obtient alors des fichiers d'erreurs inexistantes, et que ce problème peut (et sera sans nul doute) retrouvé dans de nombreux autres exercices...)
+
+** Tue 04 Aug
+
+*** TODO Regarder comment intégrer les erreurs classiques à webPLM
+    SCHEDULED: <2015-08-04 tue.>
+    - La question est maintenant : faut-il attendre ce qu'est en train de faire Tanguy ou pas ? L'implémentation peut-elle changer entre-temps ? Et si oui, vais-je avoir suffisamment de temps pour m'en occuper tout en regardant les erreurs des étudiants ?
