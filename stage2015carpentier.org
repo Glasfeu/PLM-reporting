@@ -330,12 +330,15 @@
 - Résolution d'erreurs sur les chemins des fichiers depuis le jar qui a impliqué un gros refactoring du code puisque la structure de recherche a complètement changé. 
 - Résolution d'un bug qui écrivait un commentaire sur la traduction à la place de l'indice
 
-*** TODO Afficher le bon indice au bon moment
+*** DONE Afficher le bon indice au bon moment
     SCHEDULED: <2015-08-07 fri.>
 
 *** TODO Traduire les indices en français
     SCHEDULED: <2015-08-10 mon.>
     - Comment je suis censé faire ça ?
+      - Changer la forme des fichiers <exo>CommonErr[0-9]*.html en rajoutant la langue dans l'extension. 
 
 ** Fri 07 Aug
+
+- Le bon indice s'affiche au bon moment dans webPLM --> le jar est pret à etre mis en prod sans les traductions
 
