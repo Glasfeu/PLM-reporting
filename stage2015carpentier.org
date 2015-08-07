@@ -301,6 +301,41 @@
 
 ** Tue 04 Aug
 
-*** TODO Regarder comment intégrer les erreurs classiques à webPLM
+- Suite de l'étude précédente
+- Liste des grandes étapes de l'intégration à webPLM
+  - Merge de la master vers library et résolution des conflits
+  - Remote de la branche library de BuggleInc pour récupérer les dernières mises à jour
+  - Merge et résolution des conflits
+  - Vérification du bon fonctionnement du code et correction des éventuelles erreurs du programme
+  - Refactoring du code et nouvelle vérification du programme
+  - Mise en production
+  - Création de l'outil de retour sur les erreurs classiques
+    - A ce propos, une question se pose : dans quoi doit-on mettre ces retours élèves sur les indices ?
+
+*** DONE Regarder comment intégrer les erreurs classiques à webPLM
     SCHEDULED: <2015-08-04 tue.>
     - La question est maintenant : faut-il attendre ce qu'est en train de faire Tanguy ou pas ? L'implémentation peut-elle changer entre-temps ? Et si oui, vais-je avoir suffisamment de temps pour m'en occuper tout en regardant les erreurs des étudiants ?
+      - Finalement, il a été décidé d'intégrer le travail déjà fait depuis le jar à webPLM. Il ne reste plus qu'à bien merger, résoudre tous les conflits et vérifier le bon fonctionnement du programme, avant de revenir à l'étude des erreurs classiques. 
+
+** Wed 05 Aug
+
+- Premier merge du code de la PLM : de la master modifiée à library dans mon fork de la PLM. 
+- Résolution de tous les conflits à la main (20 fichiers incriminés).
+
+*** DONE Récupérer les dernières modifications de la branche library en utilisant un remote
+    SCHEDULED: <2015-08-06 thu.>
+
+** Thu 06 Aug
+
+- Résolution d'erreurs sur les chemins des fichiers depuis le jar qui a impliqué un gros refactoring du code puisque la structure de recherche a complètement changé. 
+- Résolution d'un bug qui écrivait un commentaire sur la traduction à la place de l'indice
+
+*** TODO Afficher le bon indice au bon moment
+    SCHEDULED: <2015-08-07 fri.>
+
+*** TODO Traduire les indices en français
+    SCHEDULED: <2015-08-10 mon.>
+    - Comment je suis censé faire ça ?
+
+** Fri 07 Aug
+
