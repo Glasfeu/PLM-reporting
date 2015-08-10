@@ -280,6 +280,7 @@
     - Je vais attendre le retour de Matthieu avant de toucher à webPLM, pour la simple et bonne raison que je n'ai aucune idée d'où regarder pour commencer...
 *** Préparer un mail à envoyer pour OverCode
     SCHEDULED: <2015-07-28 wed.>
+    - Finalement, Martin a envoyé le mail...
 
 ** Wed 29 Jul
 
@@ -341,4 +342,15 @@
 ** Fri 07 Aug
 
 - Le bon indice s'affiche au bon moment dans webPLM --> le jar est pret à etre mis en prod sans les traductions
+- Correction des conflits
+- Des problèmes entre Java 7 et Java 8 peuvent encore exister 
+
+*** TODO Faire l'intégration de feedback sur les indices
+    SCHEDULED: <2015-08-15 fri.>
+
+*** TODO Trouver une structure pour stocker le feedback sur les indices
+    SCHEDULED: <2015-08-15 fri.>
+
+* Week 10 Aug
+** Mon 10 Aug
 
