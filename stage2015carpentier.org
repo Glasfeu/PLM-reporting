@@ -362,3 +362,5 @@
     - Il reste un ajustement ou deux pour gérer plusieurs lignes dans les indices (pour l'instant, ça ne fonctionne que pour une seule ligne). 
 
 ** Tue 11 Aug
+
+- Plusieurs lignes peuvent etre écrites dans les fichiers d'indice et il n'y a pas de limite pour le nombre de caractères qui composent ces indices.
