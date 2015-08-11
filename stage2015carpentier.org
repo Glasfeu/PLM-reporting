@@ -354,3 +354,11 @@
 * Week 10 Aug
 ** Mon 10 Aug
 
+- Traduction des 9 fichiers html de l'anglais vers le français
+- Réflexion sur la manière de poser la question du feedback sur les indices aux utilisateurs pour qu'ils ne passent pas leur chemin dès l'apparition de la question
+
+*** DONE Ajouter un mécanisme de passage d'indice différent
+    SCHEDULED: <2015-08-10 mon.>
+    - Il reste un ajustement ou deux pour gérer plusieurs lignes dans les indices (pour l'instant, ça ne fonctionne que pour une seule ligne). 
+
+** Tue 11 Aug
