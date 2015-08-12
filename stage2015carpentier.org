@@ -176,7 +176,7 @@
       SCHEDULED: <2015-07-08 wed.>
 *** DONE Lancer l'exécution du programme sur une machine plus puissante
       SCHEDULED: <2015-07-10 fri.>
-*** TODO Etudier le cas d'un changement de langue pour l'affichage du texte des mondes leurre
+*** DONE Etudier le cas d'un changement de langue pour l'affichage du texte des mondes leurre
       SCHEDULED: <2015-07-10 fri.>
 
 ** Tue 07 Jul
@@ -334,7 +334,7 @@
 *** DONE Afficher le bon indice au bon moment
     SCHEDULED: <2015-08-07 fri.>
 
-*** TODO Traduire les indices en français
+*** DONE Traduire les indices en français
     SCHEDULED: <2015-08-10 mon.>
     - Comment je suis censé faire ça ?
       - Changer la forme des fichiers <exo>CommonErr[0-9]*.html en rajoutant la langue dans l'extension. 
@@ -345,11 +345,11 @@
 - Correction des conflits
 - Des problèmes entre Java 7 et Java 8 peuvent encore exister 
 
-*** TODO Faire l'intégration de feedback sur les indices
-    SCHEDULED: <2015-08-15 fri.>
+*** Faire l'intégration de feedback sur les indices
+    SCHEDULED: <2015-08-14 fri.>
 
 *** TODO Trouver une structure pour stocker le feedback sur les indices
-    SCHEDULED: <2015-08-15 fri.>
+    SCHEDULED: <2015-08-14 fri.>
 
 * Week 10 Aug
 ** Mon 10 Aug
@@ -364,3 +364,10 @@
 ** Tue 11 Aug
 
 - Plusieurs lignes peuvent etre écrites dans les fichiers d'indice et il n'y a pas de limite pour le nombre de caractères qui composent ces indices.
+- Transformation de la vue dans le monde des buggles de webPLM. 
+
+*** TODO Faire le rapport
+    SCHEDULED: <2015-08-14 fri.>
+
+** Wed 12 Aug
+
