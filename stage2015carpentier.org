@@ -243,8 +243,9 @@
 
 *** DONE Refactorer le code de test des mondes erreur dans la PLM
     SCHEDULED: <2015-07-22 wed.>
-*** TODO Regarder et modifier le canvas du baseball sur webPLM
+*** DONE Regarder et modifier le canvas du baseball sur webPLM
     SCHEDULED: <2015-07-22 wed.>
+    - A noter, l'aide de Tanguy pour les formules. 
 
 ** Wed 22 Jul
 
@@ -371,3 +372,27 @@
 
 ** Wed 12 Aug
 
+- Le monde du baseball a été arrangé grace à l'aide de Tanguy. 
+
+** Thu 13 Aug
+
+- Journée exclusivement réservée à l'implémentation d'erreurs classiques. 
+  - Puisque la quantité prime sur la qualité, et malgré le fait que l'on sache pertinemment que la plupart des erreurs trouvées après la réexécution du code élève ne corresponde pas du tout à l'erreur effectivement lue, la première erreur trouvée dans les fichiers qui correspondra à celle affichée dans le tableur résultat sera celle qui sera traduite en Java sans aucune autre forme de jugement. Le résultat sera ensuite brièvement commenté dans le fichier html correspondant et il n'y aura pas de traduction en français avant la fin de l'étude des 8000 lignes ou des 200 exercices de la PLM. 
+
+** Fri 14 Aug
+
+- Journée exclusivement réservée à la rédaction du rapport. 
+- Tous les problèmes qui pourront etre rencontrés durant ces deux journées ne seront traités qu'à partir de la dernière semaine. 
+
+* Week 17 Aug
+** Mon 17 Aug
+
+*** TODO Ajouter un message de commit pour les feedbacks
+    - CommonErrorID, Accuracy, Help, Comment, exo, kind < Message de commit
+    - Entité Common Error + html < 2 fichiers
+      SCHEDULED: <2015-08-21 fri.>
+
+** Tue 18 Aug
+** Wed 19 Aug
+** Thu 20 Aug
+** Fri 21 Aug
